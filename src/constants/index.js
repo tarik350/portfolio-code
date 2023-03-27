@@ -19,10 +19,21 @@ import {
   starbucks,
   tesla,
   shopify,
+  eneblaRestaurant,
+  eneblaUser,
   carrent,
   jobit,
+  medicineApp,
+  meetupApp,
   tripguide,
   threejs,
+  flutter,
+  backendDev,
+  olyad,
+  teddy,
+  webDev,
+  firebase,
+  express,
 } from "../assets";
 
 export const navLinks = [
@@ -46,16 +57,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Flutter Developer",
+    icon: flutter,
   },
   {
     title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
+    icon: backendDev,
   },
 ];
 
@@ -72,10 +79,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
@@ -93,9 +97,18 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "express",
+    icon: express,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
+
   {
     name: "Three JS",
     icon: threejs,
@@ -109,18 +122,17 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "flutter",
+    icon: flutter,
   },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    icon: reactjs,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    // date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,41 +141,27 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Flutter Developer",
+
+    icon: flutter,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    // date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing a full stack app for android and ios platfroms with flutter technology",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Backend  Developer",
+    icon: backendDev,
+
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    // date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Develop an api with rest or graphQl",
+      "Developing a database with sql and nosql",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
@@ -172,59 +170,53 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I have worked with Tarik on many projects and I can confirm that he has an expert level skill in flutter ",
+    name: "olyad mulugeta",
+    designation: "student at bit and freelancer",
+    company: "Bit",
+
+    image: olyad,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I know Tarik since fresh man he is a dedicated person that won't stop until he finishes a given task.from what i seen in his projects he has an excellent skill in web and mobile app development.",
+    name: "Thedron Berhanu",
+    designation: "student at Bit and freelancer",
+    company: "Bit",
+    image: teddy,
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Flutter app for Resturant users",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "flutter based mobile application for android and ios platform that allows users to subscribe to a resturant they prefer, to make order, to make payment and so on",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "rest api",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "firebase",
+        color: "orange-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: eneblaUser,
+    source_code_link: "https://github.com/Zagwe/enebla_user_app.git",
   },
+
   {
-    name: "Job IT",
+    name: "Flutter app for restaurant owners",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Flutter based app that allows resturant owners to register and show case their menus and subscription plans and  manage information related to their subscribed users like balance , order and soon ",
     tags: [
       {
-        name: "react",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
@@ -232,33 +224,50 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "firebase",
+        color: "orange-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: eneblaRestaurant,
+    source_code_link: "https://github.com/Zagwe/enebla_customer.git",
   },
   {
-    name: "Trip Guide",
+    name: "Ai based medicine description app",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An ai based medicine description app that allow users to scan a prescription and get medicine description.it also allows to save those identified medicine for offline use",
     tags: [
       {
-        name: "nextjs",
+        name: "flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "firebase",
         color: "green-text-gradient",
+      },
+    ],
+    image: medicineApp,
+    source_code_link: "https://github.com/pegasuse-x/Project-Samaritan.git",
+  },
+  {
+    name: "Meetup Tracker React app",
+    description:
+      "React app that allow users to track their meetuings by setting meetup time and place",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+        color: "green-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: meetupApp,
+    source_code_link: "https://github.com/tarik350/react-meetup.git",
   },
 ];
 

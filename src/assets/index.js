@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import firebase from "./firebase.png";
+import express from "./express.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,7 +31,17 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import flutter from "./flutter.png";
+import backendDev from "./backend-dev.png";
+import eneblaRestaurant from "./enebla restaurant.png";
+import eneblaUser from "./enebla user.png";
+import medicineApp from "./medicine app.png";
+import meetupApp from "./meeup app.png";
+import olyad from "./olyad.jpeg";
+import teddy from "./teddy.jpeg";
+import tarikLogo from "./tarik logo.png";
+import tarikHero from "./tarik hero.jpeg";
+import webDev from "./web dev.jpeg";
 export {
   logo,
   backend,
@@ -57,6 +69,19 @@ export {
   starbucks,
   tesla,
   carrent,
+  eneblaRestaurant,
+  eneblaUser,
+  medicineApp,
+  meetupApp,
   jobit,
   tripguide,
+  flutter,
+  backendDev,
+  olyad,
+  teddy,
+  tarikLogo,
+  tarikHero,
+  webDev,
+  firebase,
+  express,
 };
