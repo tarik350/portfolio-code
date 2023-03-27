@@ -174,7 +174,7 @@ const testimonials = [
     name: "olyad mulugeta",
     designation: "student at bit and freelancer",
     company: "Bit",
-
+    link: "https://www.linkedin.com/in/olyad-mulugeta-79875621b/",
     image: olyad,
   },
   {
@@ -183,6 +183,7 @@ const testimonials = [
     name: "Thedron Berhanu",
     designation: "student at Bit and freelancer",
     company: "Bit",
+    link: "https://www.linkedin.com/in/thedron-berhanu-953750230/",
     image: teddy,
   },
 ];

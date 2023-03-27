@@ -13,6 +13,7 @@ const FeedbackCard = ({
   designation,
   company,
   image,
+  link,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -23,20 +24,26 @@ const FeedbackCard = ({
     <div className="mt-1">
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
 
-      <div className="mt-7 flex justify-between items-center gap-1">
-        <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[16px]">
-            <span className="blue-text-gradient">@</span> {name}
-          </p>
-          <p className="mt-1 text-secondary text-[12px]">{designation}</p>
-        </div>
+      <a href={link}>
+        {" "}
+        <div className="mt-7 flex justify-between items-center gap-1">
+          <div className="flex-1 flex flex-col">
+            <p className="text-white font-medium text-[16px]">
+              <span className="blue-text-gradient">@</span> {name}
+            </p>
+            <p className="mt-1 text-secondary text-[12px]">{designation} </p>
+          </div>
 
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
-        />
-      </div>
+          <a href={link}>
+            {" "}
+            <img
+              src={image}
+              alt={`feedback_by-${name}`}
+              className="w-10 h-10 rounded-full object-cover"
+            />
+          </a>
+        </div>
+      </a>
     </div>
   </motion.div>
 );
