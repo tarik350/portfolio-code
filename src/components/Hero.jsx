@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import ServiceCard from "./utils/ServiceCard";
 
-import { tarikHero } from "../assets";
+import { tarikHero, tarikHeroProfile } from "../assets";
 
 const Hero = () => {
   return (
@@ -31,7 +31,7 @@ const Hero = () => {
 
       {/* <ComputersCanvas /> */}
       <div className="absolute  top-[70%] left-[50%] center">
-        <ServiceCard index={0} image={tarikHero} />
+        <ServiceCard index={0} image={tarikHeroProfile} />
       </div>
 
       <div className=" absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

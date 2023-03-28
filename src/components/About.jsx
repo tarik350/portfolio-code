@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import NewServiceCard from "./utils/ServiceCard";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -62,11 +63,9 @@ const About = () => {
         outside the box.
       </motion.p>
 
-      <div className="mt-20 flex  justify-between gap-10">
+      <div className="mt-20 flex justify-center flex-wrap gap-10">
         {services.map((service, index) => (
-          <div className="">
-            <ServiceCard key={service.title} index={index} {...service} />
-          </div>
+          <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
     </>

@@ -42,6 +42,8 @@ import teddy from "./teddy.jpeg";
 import tarikLogo from "./tarik logo.png";
 import tarikHero from "./tarik hero.jpeg";
 import webDev from "./web dev.jpeg";
+import tarikHeroProfile from "./tarik hero.jpg";
+
 export {
   logo,
   backend,
@@ -84,4 +86,5 @@ export {
   webDev,
   firebase,
   express,
+  tarikHeroProfile,
 };
