@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import ServiceCard from "./utils/ServiceCard";
 
-import { tarikHero, tarikHeroProfile } from "../assets";
+import { tarikHero, tarikHeroProfile, tarikLogo } from "../assets";
 
 const Hero = () => {
   return (
@@ -23,15 +23,17 @@ const Hero = () => {
             Hey there, I'm <span className="text-[#b7e4c7]">Tarik</span>
           </h1>
           <p className={`${styles.heroSubText}font-italic mt-2 text-white-100`}>
-            I develop Mobile apps, websites <br className="sm:block hidden" />
-            and Design user interface.
+            I develop <span className="text-[red]">Mobile </span>apps,{" "}
+            <span className="text-[red]">websites</span>{" "}
+            <br className="sm:block hidden" />
+            and Design <span className="text-[red]">user interface</span>.
           </p>
         </div>
       </div>
 
       {/* <ComputersCanvas /> */}
       <div className="absolute  top-[70%] left-[50%] center">
-        <ServiceCard index={0} image={tarikHeroProfile} />
+        <ServiceCard index={0} image={tarikHero} />
       </div>
 
       <div className=" absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

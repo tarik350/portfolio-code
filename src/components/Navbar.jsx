@@ -51,7 +51,10 @@ const Navbar = () => {
             Tarik &nbsp;{" "}
             <span className="sm:block hidden  text-[#b7e4c7]">| </span>
             &nbsp;{"    "}
-            <span className="sm:block hidden"> Web and Mobile app Develo</span>
+            <span className="sm:block hidden">
+              {" "}
+              Web and Mobile app Developer
+            </span>
           </p>
         </Link>
 
