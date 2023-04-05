@@ -1,17 +1,33 @@
 import { motion } from "framer-motion";
-
+import { useState, useEffect } from "react";
+import { MobileView, BrowserView } from "react-device-detect";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import ServiceCard from "./utils/ServiceCard";
+import ServiceCard, { ServiceCardMobile } from "./utils/ServiceCard";
 
 import { tarikHero, tarikHeroProfile, tarikLogo } from "../assets";
 
 const Hero = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section
+      className={`flex   flex-col items-center  justify-center w-full h-screen `}
+    >
       {/* child one */}
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`  sm:mt-0  inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         {/* <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#95d5b2]" />
@@ -32,11 +48,15 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className="absolute  top-[70%] left-[50%] center">
-        <ServiceCard index={0} image={tarikHero} />
+      <div className=" mt-20 mb-16  ">
+        {isMobile ? (
+          <ServiceCardMobile index={0} image={tarikHero} />
+        ) : (
+          <ServiceCard index={0} image={tarikHero} />
+        )}
       </div>
 
-      <div className=" absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="  xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

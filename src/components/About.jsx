@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,12 +6,12 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import NewServiceCard from "./utils/ServiceCard";
+import NewServiceCard, { ServiceCardMobile } from "./utils/ServiceCard";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
-      <motion.div
+      <div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
@@ -33,12 +33,25 @@ const ServiceCard = ({ index, title, icon }) => {
             {title}
           </h3>
         </div>
-      </motion.div>
+      </div>
     </Tilt>
   );
 };
 
 const About = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -64,9 +77,23 @@ const About = () => {
       </motion.p>
 
       <div className="mt-20 flex justify-center flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+        {services.map((service, index) => {
+          if (isMobile) {
+            return (
+              <ServiceCardMobile
+                key={service.title}
+                index={index}
+                image={service.icon}
+                title={service.title}
+                about={true}
+              />
+            );
+          } else {
+            return (
+              <ServiceCard key={service.title} index={index} {...service} />
+            );
+          }
+        })}
       </div>
     </>
   );

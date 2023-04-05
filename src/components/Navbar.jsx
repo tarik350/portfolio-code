@@ -27,9 +27,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`px-[12px] md:px-[16px] w-full flex items-center py-5 fixed  z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -47,7 +45,7 @@ const Navbar = () => {
             alt="logo"
             className="w-9 h-9 object-fill rounded-full"
           />
-          <p className="text-white  text-[18px] font-bold cursor-pointer flex ">
+          <p className=" text-white  text-[18px] font-bold cursor-pointer flex ">
             Tarik &nbsp;{" "}
             <span className="sm:block hidden  text-[#b7e4c7]">| </span>
             &nbsp;{"    "}
@@ -83,7 +81,7 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            }  p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-lg shadow sidebar`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
