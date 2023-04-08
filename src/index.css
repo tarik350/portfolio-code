@@ -54,6 +54,13 @@
     rgba(60, 51, 80, 0) 100%
   );
 }
+
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .parent {
   position: relative;
 }

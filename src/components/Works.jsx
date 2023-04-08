@@ -1,6 +1,7 @@
-import React from "react";
+import { useState, useEffect, useContext } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
+import ShowModalContext from "../state/show-modal-provider";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -9,6 +10,9 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
+  link,
+  id,
+  platform,
   index,
   name,
   description,
@@ -16,16 +20,12 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const showModalContext = useContext(ShowModalContext);
+
+  const openModal = showModalContext.openModal;
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-      >
+      <div className="bg-tertiary flex flex-col  p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -62,7 +62,19 @@ const ProjectCard = ({
             </p>
           ))}
         </div>
-      </Tilt>
+        <button
+          onClick={() => {
+            if (platform === "mobile") {
+              openModal(id);
+            } else {
+              window.location.href = link;
+            }
+          }}
+          className="w-max self-center font-poppins   text-white bg-black shadow-lg  shadow-primary text-[18px] font-poppins font-bold   uppercase px-10 py-2 rounded-lg mt-10"
+        >
+          view demo
+        </button>
+      </div>
     </motion.div>
   );
 };
@@ -88,7 +100,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap justify-center lg:justify-start gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

@@ -34,6 +34,25 @@ import {
   webDev,
   firebase,
   express,
+
+  //enebla resturant
+  onBoarding,
+  addFoodPage,
+  addMenuPage,
+  addedMenusPage,
+  menuAddedSuccessfully,
+  order,
+  login,
+  setting,
+  eneblaResturantHome,
+  changePassword,
+
+  //samaritan
+  medIdentifiedPage,
+  medDescriptionPage,
+  popularMedPage,
+  samaritanHome,
+  savedMed,
 } from "../assets";
 
 export const navLinks = [
@@ -191,6 +210,8 @@ const testimonials = [
 const projects = [
   {
     name: "Flutter app for Resturant users",
+    platform: "mobile",
+    id: "eneblaUser",
     description:
       "flutter based mobile application for android and ios platform that allows users to subscribe to a resturant they prefer, to make order, to make payment and so on",
     tags: [
@@ -213,6 +234,8 @@ const projects = [
 
   {
     name: "Flutter app for restaurant owners",
+    platform: "mobile",
+    id: "eneblaResturant",
     description:
       "Flutter based app that allows resturant owners to register and show case their menus and subscription plans and  manage information related to their subscribed users like balance , order and soon ",
     tags: [
@@ -234,6 +257,8 @@ const projects = [
   },
   {
     name: "Ai based medicine description app",
+    platform: "mobile",
+    id: "samaritan",
     description:
       "An ai based medicine description app that allow users to scan a prescription and get medicine description.it also allows to save those identified medicine for offline use",
     tags: [
@@ -251,6 +276,9 @@ const projects = [
   },
   {
     name: "Meetup Tracker React app",
+    platform: "web",
+    id: "meetup tracker",
+    link: "https://tarik350.github.io/react-task-tracker/",
     description:
       "React app that allow users to track their meetuings by setting meetup time and place",
     tags: [
@@ -269,6 +297,87 @@ const projects = [
     ],
     image: meetupApp,
     source_code_link: "https://github.com/tarik350/react-meetup.git",
+  },
+];
+
+export const eneblaResturant = [
+  {
+    title: "Find me on Twitter",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: onBoarding,
+  },
+  {
+    title: "Welcome to Ark Labs",
+    link: "https://ark-labs.co.uk",
+    imageUrl: login,
+  },
+  {
+    title: "Some sort of third title",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: eneblaResturantHome,
+  },
+  {
+    title: "A personal site perhaps?",
+    link: "https://robkendal.co.uk",
+    imageUrl: addMenuPage,
+  },
+  {
+    title: "Super item number five",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: addFoodPage,
+  },
+  {
+    title: "Super item number six",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: addedMenusPage,
+  },
+  {
+    title: "Super item number seven",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: menuAddedSuccessfully,
+  },
+  {
+    title: "Super item number eight",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: order,
+  },
+  {
+    title: "Super item number eight",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: changePassword,
+  },
+  {
+    title: "Super item number the last",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: setting,
+  },
+];
+
+export const samaritan = [
+  {
+    title: "Find me on Twitter",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: samaritanHome,
+  },
+  {
+    title: "Welcome to Ark Labs",
+    link: "https://ark-labs.co.uk",
+    imageUrl: medDescriptionPage,
+  },
+  {
+    title: "Some sort of third title",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: savedMed,
+  },
+  {
+    title: "A personal site perhaps?",
+    link: "https://robkendal.co.uk",
+    imageUrl: popularMedPage,
+  },
+  {
+    title: "Super item number five",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: medIdentifiedPage,
   },
 ];
 

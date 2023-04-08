@@ -20,10 +20,13 @@ const Hero = () => {
     };
   }, []);
 
-  const isMobile = width <= 768;
+  const isMobile = width <= 1024;
+
+  //h-screen is the cause of this problem we have to find a way to give the same property without affecting
+  //the screens layout
   return (
     <section
-      className={`flex   flex-col items-center  justify-center w-full h-screen `}
+      className={`flex   flex-col items-center  justify-center w-full h-screen py-20`}
     >
       {/* child one */}
       <div
@@ -48,7 +51,7 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className=" mt-20 mb-16  ">
+      <div className=" mt-20 mb-16 mx-16 ">
         {isMobile ? (
           <ServiceCardMobile index={0} image={tarikHero} />
         ) : (

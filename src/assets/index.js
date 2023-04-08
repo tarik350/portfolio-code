@@ -44,6 +44,27 @@ import tarikHero from "./tarik hero.jpeg";
 import webDev from "./web dev.jpeg";
 import tarikHeroProfile from "./tarik hero.jpg";
 
+//enebla resturant
+
+import addFoodPage from "./enebla restuarnt/add food.png";
+import addMenuPage from "./enebla restuarnt/add menu.png";
+import changePassword from "./enebla restuarnt/change Password.png";
+import addedMenusPage from "./enebla restuarnt/added menus.png";
+import login from "./enebla restuarnt/login.png";
+import eneblaResturantHome from "./enebla restuarnt/home.png";
+import menuAddedSuccessfully from "./enebla restuarnt/menu added successfully.png";
+import onBoarding from "./enebla restuarnt/onboarding.png";
+import order from "./enebla restuarnt/order.png";
+import setting from "./enebla restuarnt/setting.png";
+
+//samaritan
+
+import medDescriptionPage from "./samaritan/med description.png";
+import medIdentifiedPage from "./samaritan/med identified.png";
+import popularMedPage from "./samaritan/popular medicine.png";
+import samaritanHome from "./samaritan/samaritan home.png";
+import savedMed from "./samaritan/saved medicine.png";
+
 export {
   logo,
   backend,
@@ -87,4 +108,23 @@ export {
   firebase,
   express,
   tarikHeroProfile,
+
+  //enebla resturant
+  onBoarding,
+  addFoodPage,
+  addMenuPage,
+  addedMenusPage,
+  menuAddedSuccessfully,
+  order,
+  login,
+  setting,
+  eneblaResturantHome,
+  changePassword,
+
+  //samaritan
+  medDescriptionPage,
+  medIdentifiedPage,
+  savedMed,
+  popularMedPage,
+  samaritanHome,
 };
