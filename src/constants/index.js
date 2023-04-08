@@ -20,7 +20,7 @@ import {
   tesla,
   shopify,
   eneblaRestaurant,
-  eneblaUser,
+  eneblaUserProfile,
   carrent,
   jobit,
   medicineApp,
@@ -53,6 +53,13 @@ import {
   popularMedPage,
   samaritanHome,
   savedMed,
+
+  //enebla user
+  eneblaUserSettingPage,
+  enblaUserHomePage,
+  resturantHomePage,
+  searchPage,
+  commentPage,
 } from "../assets";
 
 export const navLinks = [
@@ -228,7 +235,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: eneblaUser,
+    image: eneblaUserProfile,
     source_code_link: "https://github.com/Zagwe/enebla_user_app.git",
   },
 
@@ -378,6 +385,34 @@ export const samaritan = [
     title: "Super item number five",
     link: "https://twitter.com/kendalmintcode",
     imageUrl: medIdentifiedPage,
+  },
+];
+
+export const eneblaUser = [
+  {
+    title: "Find me on Twitter",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: enblaUserHomePage,
+  },
+  {
+    title: "Welcome to Ark Labs",
+    link: "https://ark-labs.co.uk",
+    imageUrl: resturantHomePage,
+  },
+  {
+    title: "Some sort of third title",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: searchPage,
+  },
+  {
+    title: "A personal site perhaps?",
+    link: "https://robkendal.co.uk",
+    imageUrl: commentPage,
+  },
+  {
+    title: "Super item number five",
+    link: "https://twitter.com/kendalmintcode",
+    imageUrl: eneblaUserSettingPage,
   },
 ];
 

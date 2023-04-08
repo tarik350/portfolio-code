@@ -34,7 +34,7 @@ import tripguide from "./tripguide.png";
 import flutter from "./flutter.png";
 import backendDev from "./backend-dev.png";
 import eneblaRestaurant from "./enebla restaurant.png";
-import eneblaUser from "./enebla user.png";
+import eneblaUserProfile from "./enebla user.png";
 import medicineApp from "./medicine app.png";
 import meetupApp from "./meeup app.png";
 import olyad from "./olyad.jpeg";
@@ -65,6 +65,13 @@ import popularMedPage from "./samaritan/popular medicine.png";
 import samaritanHome from "./samaritan/samaritan home.png";
 import savedMed from "./samaritan/saved medicine.png";
 
+//enebla user
+import commentPage from "./enebla user/comment.png";
+import enblaUserHomePage from "./enebla user/enebla user home.png";
+import resturantHomePage from "./enebla user/resturant home.png";
+import searchPage from "./enebla user/search.png";
+import eneblaUserSettingPage from "./enebla user/setting.png";
+
 export {
   logo,
   backend,
@@ -93,7 +100,7 @@ export {
   tesla,
   carrent,
   eneblaRestaurant,
-  eneblaUser,
+  eneblaUserProfile,
   medicineApp,
   meetupApp,
   jobit,
@@ -127,4 +134,11 @@ export {
   savedMed,
   popularMedPage,
   samaritanHome,
+
+  //enebla use
+  eneblaUserSettingPage,
+  enblaUserHomePage,
+  searchPage,
+  commentPage,
+  resturantHomePage,
 };
