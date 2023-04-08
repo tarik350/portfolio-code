@@ -12,7 +12,6 @@ export function ShowModalProvider(props) {
   const [carouselData, setCarouselData] = useState([]);
 
   const toggleShowModal = () => {
-    console.log("working");
     setShowModal((prev) => {
       return !prev;
     });
@@ -22,7 +21,6 @@ export function ShowModalProvider(props) {
     switch (id) {
       case "eneblaUser":
         {
-          console.log(1);
           const { eneblaUser } = await import("../constants");
           if (eneblaUser) {
             setCarouselData(eneblaUser);
@@ -33,7 +31,6 @@ export function ShowModalProvider(props) {
 
       case "eneblaResturant":
         {
-          console.log(2);
           const { eneblaResturant } = await import("../constants");
           if (eneblaResturant) {
             setCarouselData(eneblaResturant);
@@ -45,7 +42,6 @@ export function ShowModalProvider(props) {
         {
           const { samaritan } = await import("../constants");
           if (samaritan) {
-            console.log(3);
             setCarouselData(samaritan);
             setShowModal(true);
           }
