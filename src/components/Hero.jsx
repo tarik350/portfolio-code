@@ -5,7 +5,12 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import ServiceCard, { ServiceCardMobile } from "./utils/ServiceCard";
 
-import { tarikHero, tarikHeroProfile, tarikLogo } from "../assets";
+import {
+  tarikHero,
+  tarikMainHero,
+  tarikHeroProfile,
+  tarikLogo,
+} from "../assets";
 
 const Hero = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -25,9 +30,7 @@ const Hero = () => {
   //h-screen is the cause of this problem we have to find a way to give the same property without affecting
   //the screens layout
   return (
-    <section
-      className={`flex   flex-col items-center  justify-center w-full h-screen py-20`}
-    >
+    <section className={`flex   flex-col items-center  justify-center`}>
       {/* child one */}
       <div
         className={`  sm:mt-0  inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
@@ -53,9 +56,9 @@ const Hero = () => {
       {/* <ComputersCanvas /> */}
       <div className=" mt-20 mb-16 mx-16 ">
         {isMobile ? (
-          <ServiceCardMobile index={0} image={tarikHero} />
+          <ServiceCardMobile index={0} image={tarikMainHero} />
         ) : (
-          <ServiceCard index={0} image={tarikHero} />
+          <ServiceCard index={0} image={tarikMainHero} />
         )}
       </div>
 

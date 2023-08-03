@@ -28,7 +28,9 @@ const App = () => {
     <BrowserRouter>
       <div className={`relative    z-0  bg-primary  backdrop-brightness-75`}>
         <Navbar />
-        <Hero />
+        <div className="py-20 h-screen w-full">
+          <Hero />
+        </div>
         <About />
         <Experience />
         <Tech />

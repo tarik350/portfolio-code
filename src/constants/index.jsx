@@ -54,12 +54,17 @@ import {
   samaritanHome,
   savedMed,
 
+  //samaritan inventory
+  samaritanInventory,
+
   //enebla user
   eneblaUserSettingPage,
   enblaUserHomePage,
   resturantHomePage,
   searchPage,
   commentPage,
+  personIcon,
+  samuel,
 } from "../assets";
 
 export const navLinks = [
@@ -196,21 +201,23 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I have worked with Tarik on many projects and I can confirm that he has an expert level skill in flutter ",
-    name: "olyad mulugeta",
-    designation: "student at bit and freelancer",
+      "I know Tarik from his fluent time management and his capacity to pick up new technology. I have taught him 3 courses and he has performed outstandingly in all of them. I honestly believe that he will be somewhere good in the future.",
+    name: "Mr. Samuel Ashagrre",
+    designation:
+      "Lecturer at Bahir Dar university and software engineering departement chair holder",
     company: "Bit",
-    link: "https://www.linkedin.com/in/olyad-mulugeta-79875621b/",
-    image: olyad,
+    link: "https://www.linkedin.com/in/samuel-ashagrre-99882a111/",
+    image: samuel,
   },
   {
     testimonial:
       "I know Tarik since fresh man he is a dedicated person that won't stop until he finishes a given task.from what i seen in his projects he has an excellent skill in web and mobile app development.",
-    name: "Thedron Berhanu",
-    designation: "student at Bit and freelancer",
+    name: "Mr. Mentesnot",
+    designation: "Lecturer at Bahir Dar university",
     company: "Bit",
     link: "https://www.linkedin.com/in/thedron-berhanu-953750230/",
-    image: teddy,
+    image: personIcon,
+    phone: "+25192393484",
   },
 ];
 
@@ -303,6 +310,31 @@ const projects = [
       },
     ],
     image: meetupApp,
+    source_code_link: "https://github.com/tarik350/react-meetup.git",
+  },
+
+  {
+    name: "samaritan - pharamcy inventory react app",
+    platform: "web",
+    id: "samaritan-inventory",
+    link: "https://tarik350.github.io/pharmacy-inventory-react-app/",
+    description:
+      "This is a fully functional pharmacy inventory React app I made from scratch. It contains a dashboard with great detail information for pharamcy owners. It allows you to perform all types of crud operations on medicines in stock, and on top of that, it provides authentication, stock analysis, and so on.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+    ],
+    image: samaritanInventory,
     source_code_link: "https://github.com/tarik350/react-meetup.git",
   },
 ];

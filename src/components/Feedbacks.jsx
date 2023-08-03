@@ -14,31 +14,43 @@ const FeedbackCard = ({
   company,
   image,
   link,
+  phone,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+    className="bg-black-200  px-16 py-10 rounded-3xl xs:w-[400px] w-full"
   >
     <p className="text-white font-black text-[48px]">"</p>
 
     <div className="mt-1 ">
-      <p className="text-white tracking-wider text-[18px] ">{testimonial}</p>
+      <p className="text-white tracking-wider text-[18px] leading-8  ">
+        {testimonial}
+      </p>
 
       <div className="mt-7 flex justify-between items-center gap-1  ">
         <div className="flex-1  flex flex-col">
-          <p className="text-white font-medium text-[16px]">
-            <span className="blue-text-gradient">@</span> {name}
-          </p>
-          <p className="mt-1 text-secondary text-[12px]">{designation} </p>
+          <a href={link} className="">
+            {" "}
+            <p className="text-white font-medium text-[16px] hover:text-green-600 transition-all ease-in-out  duration-150 ">
+              <span className="blue-text-gradient">@</span> {name}
+            </p>
+          </a>
+          <div>
+            <p className="mt-1 text-secondary text-[12px]">{designation} </p>
+            {phone && (
+              <div className="mt-1 text-secondary text-[12px]">({phone})</div>
+            )}
+          </div>
         </div>
 
         <a href={link}>
-          {" "}
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="w-10 h-10 rounded-full object-cover"
-          />
+          <div>
+            <img
+              src={image}
+              alt={`feedback_by-${name}`}
+              className="w-[70px] h-[70px] rounded-full object-cover scale-75 hover:scale-100 transition-all duration-400 ease-in-out "
+            />
+          </div>
         </a>
       </div>
     </div>
