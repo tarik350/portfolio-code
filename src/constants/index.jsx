@@ -14,6 +14,7 @@ import {
   mongodb,
   git,
   figma,
+  tensorflow,
   docker,
   meta,
   starbucks,
@@ -65,6 +66,7 @@ import {
   commentPage,
   personIcon,
   samuel,
+  ai,
 } from "../assets";
 
 export const navLinks = [
@@ -95,6 +97,7 @@ const services = [
     title: "Backend Developer",
     icon: backendDev,
   },
+  { title: "Machine Learning", icon: ai },
 ];
 
 const technologies = [
@@ -116,8 +119,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "tensorflow",
+    icon: tensorflow,
   },
   {
     name: "Tailwind CSS",
@@ -168,9 +171,12 @@ const experiences = [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
+      "maintaining and debugging react website",
+      "state managment with redux",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+
   {
     title: "Flutter Developer",
 
@@ -192,9 +198,24 @@ const experiences = [
     // date: "Jan 2023 - Present",
     points: [
       "Develop an api with rest or graphQl",
-      "design and implement a database schema with sql and nosql",
+      "create and manage sql databases with graphql api using custom query and mutations provided",
+      "design and implement a database schema with sql or nosql",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+  },
+  {
+    title: "Machine Learning",
+    icon: ai,
+    iconBg: "#383E56",
+    // date: "March 2020 - April 2021",
+    points: [
+      "develop and maintain an AI model",
+      "Tensorflow,numpy",
+      "took a coursera cource by Andrew Ng called machine learning specialization",
+      "apply feature engineering concepts to filter features that will result in the best accuracy",
+      "comfortable with python",
+    ],
+    flag: "ai",
   },
 ];
 

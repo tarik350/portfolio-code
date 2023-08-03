@@ -9,6 +9,8 @@ import close from "./close.svg";
 import tarikMainHero from "./passport photo.jpg";
 import personIcon from "./person icon.jpeg";
 import samuel from "./samuel.jpeg";
+import ai from "./ai.png";
+import tensorflow from "./tensorflow.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -122,6 +124,8 @@ export {
   firebase,
   express,
   tarikHeroProfile,
+  ai,
+  tensorflow,
 
   //enebla resturant
   onBoarding,
