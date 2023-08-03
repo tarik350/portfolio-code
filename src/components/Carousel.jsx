@@ -49,28 +49,36 @@ const Carousel = ({ sliderData }) => {
           className="object-contain rounded-xl "
           src={sliderData[currentIndex].imageUrl}
         />
-        <div class="absolute px-[12px] rounded-xl w-full  h-0 top-0 left-0 bg-green-900 group-hover:h-full opacity-0 group-hover:opacity-40 transition-all ease-in-out duration-500 flex flex-col flex-1 justify- items-center ">
-          <h1 className="text-[40px] pb-10  font-bold text-black opacity-100">
-            {" "}
-            onBoarding page
-          </h1>
+        <div class="absolute px-[12px] rounded-xl w-full  h-0 top-0 left-0 bg-green-900 group-hover:h-full opacity-0 group-hover:opacity-80 transition-all ease-in-out duration-500 flex flex-col flex-1 justify- items-center ">
+          <h1 className="text-[40px] pb-10  font-bold text-black opacity-100"></h1>
           <p className=" w-full"></p>
         </div>
         <div
-          className="border p-2 rounded-full absolute hidden mx-2 left-0 group-hover:block "
+          className="border-4 p-2 rounded-full absolute hidden mx-2 left-0 group-hover:block "
           onClick={currentIndex > 0 ? goBackToPrevious : zeroAlert}
         >
-          <BsChevronLeft />
+          <BsChevronLeft
+            color="white"
+            // size={30}
+            // width={50}
+            overlineThickness={100}
+            underlineThickness={100}
+            strikethroughThickness={200}
+          />
         </div>
         <div
-          className="border p-2 rounded-full absolute right-0 mx-2 group-hover:block hidden transition-all ease-in-out duration-500"
+          className="border-4 p-2 rounded-full absolute right-0 mx-2 group-hover:block hidden transition-all ease-in-out duration-500"
           onClick={
             currentIndex !== sliderData.length - 1
               ? moveToNextImage
               : handleAlert
           }
         >
-          <BsChevronRight />
+          <BsChevronRight
+            overlineThickness={400}
+            underlineThickness={400}
+            strikethroughThickness={800}
+          />
         </div>
       </div>
     </div>

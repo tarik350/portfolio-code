@@ -192,7 +192,7 @@ const experiences = [
     // date: "Jan 2023 - Present",
     points: [
       "Develop an api with rest or graphQl",
-      "Developing a database with sql and nosql",
+      "design and implement a database schema with sql and nosql",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
