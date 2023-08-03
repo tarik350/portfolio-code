@@ -335,7 +335,8 @@ const projects = [
       },
     ],
     image: samaritanInventory,
-    source_code_link: "https://github.com/tarik350/react-meetup.git",
+    source_code_link:
+      "https://github.com/tarik350/pharmacy-inventory-react-app",
   },
 ];
 
