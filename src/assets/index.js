@@ -6,6 +6,9 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import tarikMainHero from "./passport photo.jpg";
+import personIcon from "./person icon.jpeg";
+import samuel from "./samuel.jpeg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -72,6 +75,9 @@ import resturantHomePage from "./enebla user/resturant home.png";
 import searchPage from "./enebla user/search.png";
 import eneblaUserSettingPage from "./enebla user/setting.png";
 
+//samaritan -- inventory
+import samaritanInventory from "./samaritan inventory.jpg";
+
 export {
   logo,
   backend,
@@ -111,6 +117,7 @@ export {
   teddy,
   tarikLogo,
   tarikHero,
+  tarikMainHero,
   webDev,
   firebase,
   express,
@@ -127,6 +134,8 @@ export {
   setting,
   eneblaResturantHome,
   changePassword,
+  personIcon,
+  samuel,
 
   //samaritan
   medDescriptionPage,
@@ -134,6 +143,9 @@ export {
   savedMed,
   popularMedPage,
   samaritanHome,
+
+  //samaritan inventory
+  samaritanInventory,
 
   //enebla use
   eneblaUserSettingPage,
