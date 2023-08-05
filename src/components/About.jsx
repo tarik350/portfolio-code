@@ -80,7 +80,8 @@ const About = () => {
         {services.map((service, index) => {
           if (isMobile) {
             return (
-              <ServiceCardMobile
+              <ServiceCardM
+              obile
                 key={service.title}
                 index={index}
                 image={service.icon}

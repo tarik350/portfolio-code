@@ -236,7 +236,7 @@ const testimonials = [
     name: "Mr. Mentesnot",
     designation: "Lecturer at Bahir Dar university",
     company: "Bit",
-    link: "https://www.linkedin.com/in/thedron-berhanu-953750230/",
+    // link: "",
     image: personIcon,
     phone: "+25192393484",
   },
