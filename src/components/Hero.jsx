@@ -30,10 +30,10 @@ const Hero = () => {
   //h-screen is the cause of this problem we have to find a way to give the same property without affecting
   //the screens layout
   return (
-    <section className={`flex   flex-col items-center  justify-center`}>
+    <section className={`flex   flex-col  max-w-7xl mx-auto`}>
       {/* child one */}
       <div
-        className={`  sm:mt-0  inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`  md:mt-8  inset-0 top-[120px]     ${styles.paddingX} flex flex-row   gap-5`}
       >
         {/* <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#95d5b2]" />
@@ -54,7 +54,7 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
-      <div className=" mt-20 mb-16 mx-16 ">
+      <div className=" mt-20 mb-16 mx-16 flex justify-center">
         {isMobile ? (
           <ServiceCardMobile index={0} image={tarikMainHero} />
         ) : (
