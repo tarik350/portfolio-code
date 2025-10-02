@@ -40,7 +40,7 @@ import tripguide from "./tripguide.png";
 import flutter from "./flutter.png";
 import backendDev from "./backend-dev.png";
 import eneblaRestaurant from "./enebla restaurant.png";
-import eneblaUserProfile from "./enebla user.png";
+import eneblaUserProfile from "./enebla-user.png";
 import medicineApp from "./medicine app.png";
 import meetupApp from "./meeup app.png";
 import olyad from "./olyad.jpeg";
@@ -53,16 +53,16 @@ import tarikHeroProfile from "./tarik hero.jpg";
 
 //enebla resturant
 
-import addFoodPage from "./enebla restuarnt/add food.png";
-import addMenuPage from "./enebla restuarnt/add menu.png";
-import changePassword from "./enebla restuarnt/change Password.png";
-import addedMenusPage from "./enebla restuarnt/added menus.png";
-import login from "./enebla restuarnt/login.png";
-import eneblaResturantHome from "./enebla restuarnt/home.png";
-import menuAddedSuccessfully from "./enebla restuarnt/menu added successfully.png";
-import onBoarding from "./enebla restuarnt/onboarding.png";
-import order from "./enebla restuarnt/order.png";
-import setting from "./enebla restuarnt/setting.png";
+import addFoodPage from "./enebla-restaurant/add food.png";
+import addMenuPage from "./enebla-restaurant/add menu.png";
+import changePassword from "./enebla-restaurant/change Password.png";
+import addedMenusPage from "./enebla-restaurant/added menus.png";
+import login from "./enebla-restaurant/login.png";
+import eneblaResturantHome from "./enebla-restaurant/home.png";
+import menuAddedSuccessfully from "./enebla-restaurant/menu added successfully.png";
+import onBoarding from "./enebla-restaurant/onboarding.png";
+import order from "./enebla-restaurant/order.png";
+import setting from "./enebla-restaurant/setting.png";
 
 //samaritan
 
@@ -72,12 +72,12 @@ import popularMedPage from "./samaritan/popular medicine.png";
 import samaritanHome from "./samaritan/samaritan home.png";
 import savedMed from "./samaritan/saved medicine.png";
 
-//enebla user
-import commentPage from "./enebla user/comment.png";
-import enblaUserHomePage from "./enebla user/enebla user home.png";
-import resturantHomePage from "./enebla user/resturant home.png";
-import searchPage from "./enebla user/search.png";
-import eneblaUserSettingPage from "./enebla user/setting.png";
+//enebla-user
+import commentPage from "./enebla-user/comment.png";
+import enblaUserHomePage from "./enebla-user/enebla user home.png";
+import resturantHomePage from "./enebla-user/resturant home.png";
+import searchPage from "./enebla-user/search.png";
+import eneblaUserSettingPage from "./enebla-user/setting.png";
 
 //samaritan -- inventory
 import samaritanInventory from "./samaritan inventory.jpg";
