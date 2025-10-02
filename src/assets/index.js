@@ -6,8 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import tarikMainHero from "./passport photo.jpg";
-import personIcon from "./person icon.jpeg";
+import tarikMainHero from "./passport-photo.jpg";
+import personIcon from "./person-icon.jpeg";
 import samuel from "./samuel.jpeg";
 import ai from "./ai.png";
 import tensorflow from "./tensorflow.png";
@@ -53,24 +53,24 @@ import tarikHeroProfile from "./tarik hero.jpg";
 
 //enebla resturant
 
-import addFoodPage from "./enebla-restaurant/add food.png";
-import addMenuPage from "./enebla-restaurant/add menu.png";
-import changePassword from "./enebla-restaurant/change Password.png";
-import addedMenusPage from "./enebla-restaurant/added menus.png";
+import addFoodPage from "./enebla-restaurant/add-food.png";
+import addMenuPage from "./enebla-restaurant/add-menu.png";
+import changePassword from "./enebla-restaurant/change-password.png";
+import addedMenusPage from "./enebla-restaurant/added-menus.png";
 import login from "./enebla-restaurant/login.png";
 import eneblaResturantHome from "./enebla-restaurant/home.png";
-import menuAddedSuccessfully from "./enebla-restaurant/menu added successfully.png";
+import menuAddedSuccessfully from "./enebla-restaurant/menu-added-successfully.png";
 import onBoarding from "./enebla-restaurant/onboarding.png";
 import order from "./enebla-restaurant/order.png";
 import setting from "./enebla-restaurant/setting.png";
 
 //samaritan
 
-import medDescriptionPage from "./samaritan/med description.png";
-import medIdentifiedPage from "./samaritan/med identified.png";
-import popularMedPage from "./samaritan/popular medicine.png";
-import samaritanHome from "./samaritan/samaritan home.png";
-import savedMed from "./samaritan/saved medicine.png";
+import medDescriptionPage from "./samaritan/med-description.png";
+import medIdentifiedPage from "./samaritan/med-identified.png";
+import popularMedPage from "./samaritan/popular-medicine.png";
+import samaritanHome from "./samaritan/samaritan-home.png";
+import savedMed from "./samaritan/saved-medicine.png";
 
 //enebla-user
 import commentPage from "./enebla-user/comment.png";
@@ -159,6 +159,7 @@ export {
 
   //samaritan inventory
   samaritanInventory,
+  
 
   //enebla use
   eneblaUserSettingPage,
@@ -172,4 +173,6 @@ export {
   ethrons,
   edr,
   toto,
+
+  cicd
 };

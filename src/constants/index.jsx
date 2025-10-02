@@ -73,6 +73,7 @@ import {
   ethrons,
   tinamart,
   edr,
+  cicd,
 } from "../assets";
 
 export const navLinks = [
@@ -167,7 +168,7 @@ const technologies = [
 const experiences = [
   {
     title: "Full Stack Developer",
-    icon: reactjs,
+    icon: cicd,
     iconBg: "#383E56",
     points: [
       // Frontend
