@@ -39,17 +39,17 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import flutter from "./flutter.png";
 import backendDev from "./backend-dev.png";
-import eneblaRestaurant from "./enebla restaurant.png";
-import eneblaUserProfile from "./enebla user.png";
-import medicineApp from "./medicine app.png";
-import meetupApp from "./meeup app.png";
+import eneblaRestaurant from "./enebla-restaurant.png";
+import eneblaUserProfile from "./enebla-user.png";
+import medicineApp from "./medicine-app.png";
+import meetupApp from "./meeup-app.png";
 import olyad from "./olyad.jpeg";
 import teddy from "./teddy.jpeg";
-import tarikLogo from "./tarik logo.png";
-import tarikHero from "./tarik hero.jpeg";
-import tarikteshome from "./tarik teshome.jpg";
-import webDev from "./web dev.jpeg";
-import tarikHeroProfile from "./tarik hero.jpg";
+import tarikLogo from "./tarik-logo.png";
+import tarikHero from "./tarik-hero.jpeg";
+import tarikteshome from "./tarik-teshome.jpg";
+import webDev from "./web-dev.jpeg";
+import tarikHeroProfile from "./tarik-hero.jpg";
 
 //enebla resturant
 
@@ -74,13 +74,13 @@ import savedMed from "./samaritan/saved-medicine.png";
 
 //enebla-user
 import commentPage from "./enebla-user/comment.png";
-import enblaUserHomePage from "./enebla-user/enebla user home.png";
-import resturantHomePage from "./enebla-user/resturant home.png";
+import enblaUserHomePage from "./enebla-user/enebla-user-home.png";
+import resturantHomePage from "./enebla-user/resturant-home.png";
 import searchPage from "./enebla-user/search.png";
 import eneblaUserSettingPage from "./enebla-user/setting.png";
 
 //samaritan -- inventory
-import samaritanInventory from "./samaritan inventory.jpg";
+import samaritanInventory from "./samaritan-inventory.jpg";
 
 import fenanpay from "./fenanpay.png";
 import tinamart from "./tinamart.png";
