@@ -67,6 +67,12 @@ import {
   personIcon,
   samuel,
   ai,
+  fenanpay,
+  toto,
+  byfluence,
+  ethrons,
+  tinamart,
+  edr,
 } from "../assets";
 
 export const navLinks = [
@@ -252,7 +258,7 @@ const projects = [
       { name: "redux-rtk-query", color: "orange-text-gradient" },
       { name: "security", color: "blue-text-gradient" },
     ],
-    image: carrent,
+    image: fenanpay,
     source_code_link: "",
   },
   {
@@ -273,7 +279,7 @@ const projects = [
       { name: "firebase", color: "green-text-gradient" },
       { name: "flutter", color: "orange-text-gradient" },
     ],
-    image: jobit,
+    image: tinamart,
     source_code_link: "",
     extraLinks: [
       "https://apps.apple.com/us/app/tina-mart/id6746816705",
@@ -291,7 +297,7 @@ const projects = [
       { name: "flutter", color: "blue-text-gradient" },
       { name: "firebase", color: "green-text-gradient" },
     ],
-    image: meetupApp,
+    image: ethrons,
     source_code_link: "",
   },
   {
@@ -310,7 +316,7 @@ const projects = [
       { name: "next-js", color: "orange-text-gradient" },
       { name: "tailwind-css", color: "blue-text-gradient" },
     ],
-    image: tripguide,
+    image: byfluence,
     source_code_link: "",
   },
   {
@@ -326,7 +332,7 @@ const projects = [
       { name: "node-js", color: "orange-text-gradient" },
       { name: "tailwind-css", color: "blue-text-gradient" },
     ],
-    image: medicineApp,
+    image: edr,
     source_code_link: "",
   },
   {
@@ -340,7 +346,7 @@ const projects = [
       { name: "css", color: "blue-text-gradient" },
       { name: "tailwind-css", color: "green-text-gradient" },
     ],
-    image: samaritanInventory,
+    image: toto,
     source_code_link: "",
   },
   {

@@ -82,6 +82,12 @@ import eneblaUserSettingPage from "./enebla user/setting.png";
 //samaritan -- inventory
 import samaritanInventory from "./samaritan inventory.jpg";
 
+import fenanpay from "./fenanpay.png";
+import tinamart from "./tinamart.png";
+import byfluence from "./byfluence.png";
+import ethrons from "./ethrons.png";
+import edr from "./edr.png";
+import toto from "./toto.png";
 export {
   logo,
   backend,
@@ -160,4 +166,10 @@ export {
   searchPage,
   commentPage,
   resturantHomePage,
+  fenanpay,
+  tinamart,
+  byfluence,
+  ethrons,
+  edr,
+  toto,
 };
