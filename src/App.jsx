@@ -23,7 +23,7 @@ const App = () => {
           <div className="gradient-blur gradient-hero-02" />
           <Hero />
         </div>
-        <div className="relative">
+        <div className="relative mt-32 sm:mt-24 lg:mt-32">
           <div className="gradient-blur gradient-03" />
           <About />
         </div>

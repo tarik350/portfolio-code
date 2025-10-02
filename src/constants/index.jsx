@@ -1,79 +1,59 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  tensorflow,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  eneblaRestaurant,
-  eneblaUserProfile,
-  carrent,
-  jobit,
-  medicineApp,
-  meetupApp,
-  tripguide,
-  threejs,
-  flutter,
-  backendDev,
-  olyad,
-  teddy,
-  webDev,
-  firebase,
-  express,
-
-  //enebla resturant
-  onBoarding,
   addFoodPage,
   addMenuPage,
   addedMenusPage,
-  menuAddedSuccessfully,
-  order,
-  login,
-  setting,
-  eneblaResturantHome,
+  ai,
+  backendDev,
+  byfluence,
   changePassword,
-
-  //samaritan
-  medIdentifiedPage,
-  medDescriptionPage,
-  popularMedPage,
-  samaritanHome,
-  savedMed,
-
-  //samaritan inventory
-  samaritanInventory,
-
+  cicd,
+  commentPage,
+  css,
+  edr,
+  enblaUserHomePage,
+  eneblaRestaurant,
+  eneblaResturantHome,
+  eneblaUserProfile,
   //enebla user
   eneblaUserSettingPage,
-  enblaUserHomePage,
-  resturantHomePage,
-  searchPage,
-  commentPage,
-  personIcon,
-  samuel,
-  ai,
-  fenanpay,
-  toto,
-  byfluence,
   ethrons,
+  express,
+  fenanpay,
+  figma,
+  firebase,
+  flutter,
+  git,
+  html,
+  javascript,
+  login,
+  medDescriptionPage,
+  //samaritan
+  medIdentifiedPage,
+  medicineApp,
+  meetupApp,
+  menuAddedSuccessfully,
+  mongodb,
+  nodejs,
+  //enebla resturant
+  onBoarding,
+  order,
+  personIcon,
+  popularMedPage,
+  reactjs,
+  resturantHomePage,
+  samaritanHome,
+  //samaritan inventory
+  samaritanInventory,
+  samuel,
+  savedMed,
+  searchPage,
+  setting,
+  tailwind,
+  tensorflow,
+  threejs,
   tinamart,
-  edr,
-  cicd,
+  toto,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -100,7 +80,7 @@ const services = [
     title: "Flutter Developer",
     icon: flutter,
   },
-
+  {title: "DevOps & Cloud", icon: cicd},
   { title: "Machine Learning", icon: ai },
 ];
 
@@ -168,7 +148,7 @@ const technologies = [
 const experiences = [
   {
     title: "Full Stack Developer",
-    icon: cicd,
+    icon: web,
     iconBg: "#383E56",
     points: [
       // Frontend
@@ -196,7 +176,7 @@ const experiences = [
   },
   {
     title: "DevOps & Cloud",
-    icon: backendDev,
+    icon: cicd,
     iconBg: "#E6DEDD",
     points: [
       "CI/CD: GitHub Actions and Jenkins pipelines for automated test, build, and deploy across dev/staging/prod.",
@@ -415,30 +395,30 @@ const projects = [
     image: medicineApp,
     source_code_link: "https://github.com/pegasuse-x/Project-Samaritan.git",
   },
-  {
-    name: "Meetup Tracker React app",
-    platform: "web",
-    id: "meetup tracker",
-    link: "https://tarik350.github.io/react-task-tracker/",
-    description:
-      "React app that allow users to track their meetuings by setting meetup time and place",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "css",
-        color: "green-text-gradient",
-      },
-    ],
-    image: meetupApp,
-    source_code_link: "https://github.com/tarik350/react-meetup.git",
-  },
+  // {
+  //   name: "Meetup Tracker React app",
+  //   platform: "web",
+  //   id: "meetup tracker",
+  //   link: "https://tarik350.github.io/react-task-tracker/",
+  //   description:
+  //     "React app that allow users to track their meetuings by setting meetup time and place",
+  //   tags: [
+  //     {
+  //       name: "reactjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "firebase",
+  //       color: "orange-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "green-text-gradient",
+  //     },
+  //   ],
+  //   image: meetupApp,
+  //   source_code_link: "https://github.com/tarik350/react-meetup.git",
+  // },
   {
     name: "samaritan - pharamcy inventory react app",
     platform: "web",
@@ -575,4 +555,5 @@ export const eneblaUser = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { experiences, projects, services, technologies, testimonials };
+
