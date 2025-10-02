@@ -21,31 +21,11 @@ const Hero = () => {
   const isMobile = width <= 1024;
 
   return (
-    <section className={`relative flex flex-col max-w-7xl mx-auto`}>
-      {/* Scroll Indicator */}
-      <div className="  w-full flex flex-col items-center gap-2">
-        <span className="text-secondary text-sm animate-pulse">
-          Scroll to explore
-        </span>
-        <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-white/30 bg-black/20 backdrop-blur-sm flex justify-center items-start p-2 hover:border-white/50 hover:bg-white/5 transition-all duration-300 group">
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className="w-3 h-3 rounded-full bg-white group-hover:bg-blue-400 transition-colors mb-1"
-            />
-          </div>
-        </a>
-      </div>
+    <section className={`relative flex flex-col max-w-7xl mx-auto `}>
+   
       {/* Hero Content - Two Column Layout */}
       <div
-        className={`relative md:mt-8 inset-0 top-[120px] ${styles.paddingX}`}
+        className={`relative ${width > 1024 ? "md:mt-8 inset-0 top-[120px]" : ""} ${styles.paddingX}`}
       >
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           {/* Left Column - Text Content */}
