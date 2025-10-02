@@ -40,7 +40,7 @@ import tripguide from "./tripguide.png";
 import flutter from "./flutter.png";
 import backendDev from "./backend-dev.png";
 import eneblaRestaurant from "./enebla restaurant.png";
-import eneblaUserProfile from "./enebla-user.png";
+import eneblaUserProfile from "./enebla user.png";
 import medicineApp from "./medicine app.png";
 import meetupApp from "./meeup app.png";
 import olyad from "./olyad.jpeg";
