@@ -21,6 +21,7 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
+import cicd from "./CICD_CICD.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
@@ -46,6 +47,7 @@ import olyad from "./olyad.jpeg";
 import teddy from "./teddy.jpeg";
 import tarikLogo from "./tarik logo.png";
 import tarikHero from "./tarik hero.jpeg";
+import tarikteshome from "./tarik teshome.jpg";
 import webDev from "./web dev.jpeg";
 import tarikHeroProfile from "./tarik hero.jpg";
 
@@ -119,6 +121,7 @@ export {
   teddy,
   tarikLogo,
   tarikHero,
+  tarikteshome,
   tarikMainHero,
   webDev,
   firebase,

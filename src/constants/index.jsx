@@ -86,17 +86,14 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
     title: "Flutter Developer",
     icon: flutter,
   },
-  {
-    title: "Backend Developer",
-    icon: backendDev,
-  },
+
   { title: "Machine Learning", icon: ai },
 ];
 
@@ -163,44 +160,43 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Full Stack Developer",
     icon: reactjs,
     iconBg: "#383E56",
-    // date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "maintaining and debugging react website",
-      "state managment with redux",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      // Frontend
+      "Frontend: Next.js + Tailwind CSS with scalable, feature‑oriented architecture (modular folders, reusable UI primitives, strict typing where applicable).",
+      "Networking & Data: robust HTTP layers using built‑in fetch/axios, React Query for server‑state caching and mutations, and RTK Query when Redux is in scope.",
+      "State Management: Redux Toolkit for app‑wide state, Zustand for lightweight/local state, and clean separation of server vs client state.",
+      "UX & Performance: code‑splitting, route‑level data prefetch, memoization, and accessibility best practices.",
+      // Backend
+      "Backend: Laravel, NestJS, and Express.js following clean layering (controllers/services/repositories) and DTO validation.",
+      "Security: CORS/CSRF hardening, JWT with refresh & token rotation, input validation/sanitization, and secure headers.",
+      "Data & Performance: optimized queries and indexes, careful pagination strategies, background jobs/queues, and comprehensive logging/observability.",
+      "Codebase Hygiene: clear file organization, environment segregation, and carefully managed database migrations.",
     ],
   },
-
   {
     title: "Flutter Developer",
-
     icon: flutter,
     iconBg: "#E6DEDD",
-    // date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing a full stack app for android and ios platfroms with flutter technology",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Production Flutter apps for Android & iOS with clean, testable architecture (presentation/domain/data layers).",
+      "State & DI: BLoC for predictable state, get_it for dependency injection/service location, and dartz for functional constructs (Either/Option).",
+      "Packages I commonly use: freezed/json_serializable, dio, flutter_form_builder, firebase_* (auth, messaging, analytics), hive/shared_preferences, intl, url_launcher, and more.",
+      "Release Experience: multiple submissions and approvals on both the Apple App Store and Google Play Store (signing, build flavors, CI, crash monitoring).",
     ],
   },
-
   {
-    title: "Backend  Developer",
+    title: "DevOps & Cloud",
     icon: backendDev,
-
     iconBg: "#E6DEDD",
-    // date: "Jan 2023 - Present",
     points: [
-      "Develop an api with rest or graphQl",
-      "create and manage sql databases with graphql api using custom query and mutations provided",
-      "design and implement a database schema with sql or nosql",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "CI/CD: GitHub Actions and Jenkins pipelines for automated test, build, and deploy across dev/staging/prod.",
+      "Containers: Docker & Docker Compose for reproducible environments and multi‑service orchestration.",
+      "Ingress & Proxy: Nginx and Nginx Proxy Manager for reverse proxy, SSL termination, rate limiting, and blue/green rollouts.",
+      "AWS: EC2 for hosting, ECR for image registry, S3/CloudFront as needed; environment secrets and IAM roles managed carefully.",
+      "Ops: health checks, log aggregation, alerting, and rollback strategies; infrastructure as code where applicable.",
     ],
   },
   {
@@ -244,6 +240,110 @@ const testimonials = [
 
 const projects = [
   {
+    name: "FenanPay – Payment Gateway",
+    platform: "web",
+    id: "fenanpay",
+    link: "https://dashboard.fenanpay.com/login",
+    description:
+      "A modern payment gateway similar to Chapa, featuring secure merchant onboarding, transaction monitoring, settlements, and role‑based dashboards. Built with a strong focus on UX, performance, and security best practices.",
+    tags: [
+      { name: "next-js", color: "blue-text-gradient" },
+      { name: "tailwind-css", color: "green-text-gradient" },
+      { name: "redux-rtk-query", color: "orange-text-gradient" },
+      { name: "security", color: "blue-text-gradient" },
+    ],
+    image: carrent,
+    source_code_link: "",
+  },
+  {
+    name: "Tina Mart – E‑commerce Super App",
+    platform: "web+mobile",
+    id: "tinamart",
+    link: "https://tinamart.com/",
+    description:
+      "A leading e‑commerce platform in Ethiopia delivering a seamless buyer/seller experience across web and mobile. Work spans marketplace flows, wallet & payments, logistics, and scalable infra with automated CI/CD and store deployments.",
+    tags: [
+      { name: "laravel", color: "blue-text-gradient" },
+      { name: "aws", color: "green-text-gradient" },
+      { name: "ci-cd", color: "orange-text-gradient" },
+      { name: "github-actions", color: "blue-text-gradient" },
+      { name: "ecr", color: "green-text-gradient" },
+      { name: "app-store-deployment", color: "orange-text-gradient" },
+      { name: "play-store-deployment", color: "blue-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
+      { name: "flutter", color: "orange-text-gradient" },
+    ],
+    image: jobit,
+    source_code_link: "",
+    extraLinks: [
+      "https://apps.apple.com/us/app/tina-mart/id6746816705",
+      "https://apps.apple.com/az/app/tinamart-seller/id6746981487?uo=2",
+    ],
+  },
+  {
+    name: "Ethirons – Books & Audiobooks",
+    platform: "mobile",
+    id: "ethirons",
+    link: "https://play.google.com/store/apps/details?id=com.aquila.ethrons&pcampaignid=web_share",
+    description:
+      "A mobile marketplace for buying and selling books and audiobooks with category discovery, secure checkout, and library management.",
+    tags: [
+      { name: "flutter", color: "blue-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
+    ],
+    image: meetupApp,
+    source_code_link: "",
+  },
+  {
+    name: "Byfluence – Multi‑Vendor Digital & Physical Commerce",
+    platform: "web",
+    id: "byfluence",
+    link: "https://byfluence.com/",
+    description:
+      "A rich multi‑vendor e‑commerce platform where creators sell physical goods, consultations, and digital products. Includes wallets, payouts, dynamic pricing, and an admin suite.",
+    tags: [
+      { name: "jenkins", color: "blue-text-gradient" },
+      { name: "nginx-proxy-manager", color: "green-text-gradient" },
+      { name: "aws-ec2", color: "orange-text-gradient" },
+      { name: "ci-cd", color: "blue-text-gradient" },
+      { name: "express-js", color: "green-text-gradient" },
+      { name: "next-js", color: "orange-text-gradient" },
+      { name: "tailwind-css", color: "blue-text-gradient" },
+    ],
+    image: tripguide,
+    source_code_link: "",
+  },
+  {
+    name: "EDR Freight Booking – Ethio‑Djibouti Railway",
+    platform: "web",
+    id: "edr-freight",
+    link: "https://freight.bookingedr.et/",
+    description:
+      "A government‑grade freight booking portal for Ethio‑Djibouti Railway with comprehensive customer and admin dashboards, shipment scheduling, and status tracking.",
+    tags: [
+      { name: "next-js", color: "blue-text-gradient" },
+      { name: "nest-js", color: "green-text-gradient" },
+      { name: "node-js", color: "orange-text-gradient" },
+      { name: "tailwind-css", color: "blue-text-gradient" },
+    ],
+    image: medicineApp,
+    source_code_link: "",
+  },
+  {
+    name: "Totosport – Online Betting",
+    platform: "web",
+    id: "totosport",
+    link: "https://totosport.com",
+    description:
+      "An online betting website with custom skinning, responsive components, and performance‑tuned UI for high‑traffic match days.",
+    tags: [
+      { name: "css", color: "blue-text-gradient" },
+      { name: "tailwind-css", color: "green-text-gradient" },
+    ],
+    image: samaritanInventory,
+    source_code_link: "",
+  },
+  {
     name: "Flutter app for Resturant users",
     platform: "mobile",
     id: "eneblaUser",
@@ -266,7 +366,6 @@ const projects = [
     image: eneblaUserProfile,
     source_code_link: "https://github.com/Zagwe/enebla_user_app.git",
   },
-
   {
     name: "Flutter app for restaurant owners",
     platform: "mobile",
@@ -333,7 +432,6 @@ const projects = [
     image: meetupApp,
     source_code_link: "https://github.com/tarik350/react-meetup.git",
   },
-
   {
     name: "samaritan - pharamcy inventory react app",
     platform: "web",

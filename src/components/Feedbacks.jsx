@@ -22,7 +22,7 @@ const FeedbackCard = ({
   return (
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="bg-black-200  px-16 py-10 rounded-3xl xs:w-[400px] w-full"
+      className="bg-black-200 px-16 py-10 rounded-3xl xs:w-[400px] w-full glass-effect hover:bg-black-200/80 transition-all duration-300"
     >
       <p className="text-white font-black text-[48px]">"</p>
 
@@ -35,7 +35,7 @@ const FeedbackCard = ({
           <div className="flex-1  flex flex-col">
             {link ? (
               <div className=" ">
-                <p className=" cursor-pointer text-white font-medium text-[16px] hover:text-green-600 transition-all ease-in-out  duration-150 ">
+                <p className=" cursor-pointer text-white font-medium text-[16px] hover:text-gray-300 transition-all ease-in-out  duration-150 ">
                   <span className="blue-text-gradient cursor-pointer ">@</span>{" "}
                   {name}
                 </p>
@@ -43,7 +43,7 @@ const FeedbackCard = ({
             ) : (
               <a onClick={showAlert} href={link} className="">
                 {" "}
-                <p className=" cursor-pointer text-white font-medium text-[16px] hover:text-green-600 transition-all ease-in-out  duration-150 ">
+                <p className=" cursor-pointer text-white font-medium text-[16px] hover:text-gray-300 transition-all ease-in-out  duration-150 ">
                   <span className=" cursor-pointer blue-text-gradient">@</span>{" "}
                   {name}
                 </p>
@@ -80,7 +80,7 @@ const Feedbacks = () => {
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <h2 className={styles.sectionHeadText} style={{ fontFamily: 'Sis, Inconsolata, sans-serif' }}>Testimonials.</h2>
         </motion.div>
       </div>
       <div

@@ -45,11 +45,11 @@ const Navbar = () => {
             alt="logo"
             className="w-9 h-9 object-fill rounded-full"
           />
-          <p className=" text-white  text-[18px] font-bold cursor-pointer flex ">
+          <p className=" text-white  text-[18px] font-bold cursor-pointer flex " style={{ fontFamily: 'Sis, Inconsolata, sans-serif' }}>
             Tarik &nbsp;{" "}
-            <span className="sm:block hidden  text-[#b7e4c7]">| </span>
+            <span className="sm:block hidden text-white">| </span>
             &nbsp;{"    "}
-            <span className="sm:block hidden">
+            <span className="sm:block hidden text-secondary">
               {" "}
               Web and Mobile app Developer
             </span>

@@ -11,7 +11,7 @@ import NewServiceCard, { ServiceCardMobile } from "./utils/ServiceCard";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
-      <div
+      <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
@@ -21,7 +21,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col glass-effect hover:bg-tertiary/70 transition-all duration-300"
         >
           <img
             src={icon}
@@ -33,7 +33,7 @@ const ServiceCard = ({ index, title, icon }) => {
             {title}
           </h3>
         </div>
-      </div>
+      </motion.div>
     </Tilt>
   );
 };
@@ -56,24 +56,35 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2
+          className={styles.sectionHeadText}
+          style={{ fontFamily: "Sis, Inconsolata, sans-serif" }}
+        >
+          Overview.
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a software engineer who excels at creating websites and mobile
-        applications. My knowledge of the most recent technology and trends,
-        combined with years of experience, have helped me become an expert in
-        this industry. Working with a variety of programming languages and
-        frameworks, including javascript, dart, React, tailwind, threejs,
-        nodejs, expressjs, sql and mangodb, and flutter, is one of my best
-        talents. In order to produce top-notch apps that satisfy the needs of my
-        clients, I have the ability to quickly adapt to new tools and methods.
-        When it comes to designing user interfaces and experiences, in addition
-        to my technical abilities, I am also quite creative and able to think
-        outside the box.
+        I'm a passionate software engineer with a strong focus on full stack web
+        and mobile development, software design, and modern DevOps practices.
+        Over the years, I've delivered multiple enterprise-level projects—many
+        of which are currently live and actively serving users. My expertise
+        spans the entire development lifecycle, from architecting scalable
+        systems and designing intuitive user interfaces to managing cloud
+        infrastructure, server hosting, and deployment pipelines. I thrive on
+        building robust, maintainable applications using a wide range of
+        technologies, including AWS, Express.js, Flutter, JavaScript, Jenkins,
+        MongoDB, Next.js, Nginx, Node.js, React, SQL, and Tailwind CSS. My
+        experience with DevOps enables me to efficiently scale applications,
+        automate deployments, and ensure reliable server management. I have a
+        deep appreciation for software architecture and love crafting solutions
+        that are both elegant and effective. Whether it's designing seamless
+        user experiences or optimizing backend performance, I bring creativity,
+        adaptability, and a problem-solving mindset to every project. You can
+        explore some of my recent full stack projects in the section below.
       </motion.p>
 
       <div className="mt-20 flex justify-center flex-wrap gap-10">

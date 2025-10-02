@@ -1,8 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import { useContext } from "react";
-import { onBoarding } from "./assets";
-
-import ShowModalContext from "./state/show-modal-provider";
 
 import {
   About,
@@ -11,52 +7,40 @@ import {
   Feedbacks,
   Hero,
   Navbar,
+  StarsCanvas,
   Tech,
   Works,
-  StarsCanvas,
-  Carousel,
 } from "./components";
 
 const App = () => {
-  const showModalContext = useContext(ShowModalContext);
-
-  const showModal = showModalContext.showModal;
-  const closeModal = showModalContext.closeModal;
-  const sliderData = showModalContext.carouselData;
-
   return (
     <BrowserRouter>
-      <div className={`relative    z-0  bg-primary  backdrop-brightness-75`}>
+      <div className={`relative z-0 bg-primary backdrop-brightness-75 overflow-hidden`}>
         <Navbar />
-        <div className="py-20 h-screen w-full">
+        <div className="relative py-20 h-screen w-full">
+          {/* Hero gradient blurs */}
+          <div className="gradient-blur gradient-hero-01" />
+          <div className="gradient-blur gradient-hero-02" />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <div className="relative   ">
-          <Works />
-          {showModal ? (
-            <div className="flex   items-end justify-center   rounded-xl  absolute top-[50%] z-50 left-[50%] center">
-              <div className="h-[80vh] relative  ">
-                <div
-                  onClick={closeModal}
-                  className="bg-[red] w-max px-4 py-[10px] absolute top-0  rounded-tr-lg  right-0"
-                >
-                  x
-                </div>
-                <div className="flex modal-background flex-wrap justify-center items-center ">
-                  <div className="w-[70%]">
-                    <Carousel sliderData={sliderData} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div> </div>
-          )}
+        <div className="relative">
+          <div className="gradient-blur gradient-03" />
+          <About />
         </div>
-        <Feedbacks />
+        <div className="relative">
+          <Experience />
+        </div>
+        <div className="relative">
+          <Tech />
+        </div>
+        <div className="relative">
+          <div className="gradient-blur gradient-04" />
+          <Works />
+        </div>
+        <div className="relative">
+          <div className="gradient-blur gradient-05" />
+          <Feedbacks />
+        </div>
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
